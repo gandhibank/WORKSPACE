@@ -1,0 +1,14 @@
+/*this is multiline comments*/
+/*4*/
+@font-face {
+  src: url('../assets/DMSerifText-Regular.ttf');
+  font-family: myFont; 
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
