@@ -22,8 +22,6 @@
   --p2: 1.5rem / 1.5em var(--ff);
   --shadow: #00000030 0px 4px 10px 0px;
   --transition: 0.3s ease-in-out;
-  /* --subtext: .75rem / 1.8em var(--ff);
-    --pre: 1rem / 1.5em var(--ff2);*/
 }
 *,
 *::before,
@@ -381,7 +379,7 @@ body {
 
 /* overlayer ends --------------------------------------*/
 #mainContent {
-  /* display: none; */
+  display: none;
 }
 /* header */
 #topbar {
@@ -765,9 +763,9 @@ body {
 
 /* navbar ends */
 /* section 1 start - --- -------- */
-main {
-  /* border: 1px solid red; */
-}
+/* main {
+   border: 1px solid red; 
+} */
 .section {
   /* border: 1px solid blue; */
   position: relative;
@@ -880,8 +878,8 @@ svg#layer1 path {
 
 /* Section 1 ends */
 /* section 2 starts */
-.topCenterSection {
-}
+/* .topCenterSection {
+} */
 
 .aboutMeSection {
   min-height: 25rem;

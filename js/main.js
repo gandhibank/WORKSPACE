@@ -3,10 +3,10 @@ let mainHeight = window.outerHeight;
 let mainwidth = window.outerWidth;
 let sparkle = [];
 let myBody = document.body;
-let  mainContent= document.getElementById('mainContent');
+let mainContent = document.getElementById("mainContent");
 setTimeout(() => {
   mainContent.style.display = "block";
-}, 3490);
+}, 3495);
 
 // sparkle dots
 for (let i = 0; i < 35; i++) {
@@ -101,8 +101,8 @@ window.addEventListener("scroll", function (e) {
     toTopIcon.style.display = "none";
   }
 });
-toTopIcon.addEventListener('click', function(ev){
-  window.scrollTo(0,0);
+toTopIcon.addEventListener("click", function (ev) {
+  window.scrollTo(0, 0);
 });
 // footer
 // greeting
@@ -154,4 +154,4 @@ let ghostEntry = setInterval(() => {
   }
 }, sec);
 
-// overlayers ends -----------
+// overlayers ends ---------
