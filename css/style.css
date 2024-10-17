@@ -763,9 +763,9 @@ body {
 
 /* navbar ends */
 /* section 1 start - --- -------- */
-main {
-  /* border: 1px solid red; */
-}
+/* main {
+   border: 1px solid red; 
+} */
 .section {
   /* border: 1px solid blue; */
   position: relative;
@@ -878,8 +878,8 @@ svg#layer1 path {
 
 /* Section 1 ends */
 /* section 2 starts */
-.topCenterSection {
-}
+/* .topCenterSection {
+} */
 
 .aboutMeSection {
   min-height: 25rem;
