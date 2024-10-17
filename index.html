@@ -1,26 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="foods">
-    <meta name="description" content="web learning page">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="gandhi raj">
-    <meta name="msapplication-navbutton-color" content="red">
-    <!-- <meta http-equiv="refresh" content="30"> -->
-    <!-- <base href="https://whatpixel.com/open-source/" target="_blank"> -->
-    <title id="title">my first web page</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="favicon" href="../assets/flamingo.webp" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>         
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
   <body>
-    
-    <!-- js file -->
-    <script stype=button src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div id="mainContent">
+      <!-- header -->
+      <header id="headerSection">
+        <div id="topbar">
+          <div id="topabarLeft">
+            <div class="logoAnimeCon">
+              <div class="logoHalf logoHalfOne"></div>
+              <div class="logoHalf logoHalfTwo"></div>
+            </div>
+            <div class="logoName">
+              <a href="#" id="myName" type="button" class="paral">Gandhi</a>
+            </div>
+          </div>
+          <div id="topabarRight">
+            <div class="modeItems">
+              <p id="modeText" class="para">Dark</p>
+              <form id="modeForm">
+                <label for="modeCheck" class="modeLabel">
+                  <input type="checkbox" id="modeCheck" />
+                  <div class="modeToogleCon">
+                    <div class="modeToggleSwitch"></div>
+                  </div>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav id="navbar">
+        <ul class="navbarMenu">
+          <li class="navbar-item"><a href="#">Home</a></li>
+          <li class="navbar-item"><a href="#">About</a></li>
+          <li class="navbar-item"><a href="#">Projects</a></li>
+          <li class="navbar-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="section">
+          <div class="banner max-w">
+            <div class="sectionLeft">
+              <h3 class="h3 rounded-1">
+                <span id="handWave">✌🏼</span>Hi there! I'm Gandhi Raj
+              </h3>
+              <br />
+              <h1 class="h1">A Web Developer</h1>
+              <p class="para">
+                I'm a passionate web developer with a focus on creating dynamic
+                and user-friendly websites. With a foundation in modern web
+                technologies, I enjoy transforming ideas into engaging digital
+                experiences.
+              </p>
+              <div class="btnGroups">
+                <button type="button" class="btnSecondary rounded-1 mt-1">
+                  Get Resume
+                </button>
+                <button type="button" class="btnPrimary rounded-1 ml-2 mt-1">
+                  Hire Me
+                </button>
+              </div>
+            </div>
+            <div class="sectionRight">
+              <img
+                src="./assets/bannerimg.png"
+                alt="bannerImg"
+                width="500px"
+                height="auto"
+                class="d-block"
+              />
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 100 100" id="layer1">
+              <path d="M 0 50 C 0 20, 30 30, 50 50, C 70 70, 100 80, 100 50, C 100 20, 70 30, 50 50, C 30 70, 0 80, 0 50" stroke="#000" stroke-width="2" fill="none" stroke-linejoin="round">
+            </svg>
+          </div>
+        </div>
+        <div class="section" id="aboutcontainer">
+          <div class="topCenterSection p-1 t-center max-w">
+            <h2 class="h2 pt-2">About Me</h2>
+            <span class="separatorBar mt-1"></span>
+            <p class="para pt-1">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.</p>
+          </div>
+          <div class="d-flex aboutMeSection max-w">
+            <div class="col-6 p-1">
+              <h3 class="h3 pt-2">My Skills</h3>
+              <div class="d-flex pt-2 skillBadge">
+                <div><i class="fa-brands fa-html5" style="color: #E44D26;"></i>HTML</div>
+                <div><i class="fa-brands fa-css3-alt" style="color: #264DE4;"></i>CSS</div>
+                <div><i class="fa-brands fa-js" style="color: #F0DB4E;"></i>JavaScript</div>
+                <div><i class="fa-brands fa-bootstrap" style="color: #522197;"></i>Bootstrap</div>
+                <div><i class="fa-brands fa-react" style="color: #62D9FC;"></i>React</div>
+                <div><i class="fa-solid fa-cubes-stacked" style="color: #26b1ce;"></i>SVG</div>
+                <div><i class="fa-brands fa-sass" style="color: #CE6B9C;"></i>SASS</div>
+                <div><i class="fa-brands fa-github"></i>Github</div>
+                <div><i class="fa-brands fa-wordpress"></i>Wordpress</div>
+                <div><i class="fa-solid fa-align-center" style="color: #e14742;"></i>Responsive Design</div>
+              </div>
+            </div>
+            <div class="col-6 p-1">
+              <h3 class="h3 pt-2">Get to know me!</h3>
+              <p class="para pt-2">I'm a <span class="highlight">Frontend Web Developer</span> specializing in building and managing the front-end of websites and web applications, driving the overall success of products. I'm currently seeking <span class="highlight">job</span> opportunities where I can contribute, learn, and grow. Please <span class="highlight">reach out</span> if you have a suitable chance that aligns with my skills and experience! </p>
+              <button type="button" class="btn btnSecondary mt-2">Reach Out</button>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="400px" height="320px" viewBox="0 0 100 100" id="layer2">
+            <linearGradient id="gradient1" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color: #f2f2f2; stop-opacity:1" />
+              <stop offset="100%" style="stop-color: #333; stop-opacity:1" />
+            </linearGradient>
+            <path d="M0, 50 C 0 0, 30 0, 40 50 C 50 100, 20 100, 15 50 C 10 5, 55 0, 75 50 C 95 100, 60 100, 55 50 C 50 10, 90 0, 98 50" stroke="url(#gradient1)" stroke-width="2" fill="none" stroke-linecap="round" class="">
+          </svg>
+        </div>
+        <div class="section" id="prjectContainer">
+          <div class="topCenterSection p-1 t-center max-w">
+            <h2 class="h2 pt-2">Projects</h2>
+            <span class="separatorBar mt-1"></span>
+            <p class="para pt-1">Here you will find some of the personal and clients projects that I created with each project containing its own case study.</p>
+          </div>
+          <div class="d-flex projectSec max-w">
+            <div class="col-6 p-1 align-center">
+              <h3 class="h3 pt-2">Dopefolio</h3>
+              <p class="para pt-2">Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally</p>
+              <button type="button" class="btn btnPrimary mt-2">
+                Case Study</button>
+            </div>
+            <div class="col-6 p-1 align-center">
+              <img src="./assets/bannerimg.png" alt="projectPic" width="100%" height="100%" class="d-block">
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="400px" height="320px" viewBox="0 0 100 100" id="layer3">
+            <linearGradient id="gradient2" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" style="stop-color: #e14742; stop-opacity:1" />
+              <stop offset="100%" style="stop-color: #26b1ce; stop-opacity:1" />
+            </linearGradient>
+            <path d="M50 50, L5 50, 5 5 Q 50 0, 50 50 L50 5, 95 5 Q95 50, 50 50 L50 95, 5 95 Q5 50, 50 50 L95 50, 95 95 Q50 95, 50 50" stroke="black" stroke-width="0" fill="url(#gradient2)" stroke-linecap="round" stroke-linecap="round" class="">
+          </svg>
+        </div>
+        <div class="section pt-2" id="contactContainer">
+          <div class="topCenterSection p-1 t-center max-w">
+            <h2 class="h2 pt-2">Contact</h2>
+            <span class="separatorBar mt-1"></span>
+            <p class="para pt-1">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.</p>
+          </div>
+          <div class="contactSection mi-auto rounded-1">
+            <h3 class="h3 pt-1">Shoot me a Mail</h3>
+            <div>
+              <form id="contactForm" validate>
+                <label for="fullname">Name</label>
+                <input type="text" placeholder="Enter Your Name" minlength="1" required>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Your Email" required>
+                <label for="message">Message</label>
+                <textarea name="description" id="myDescription" rows="8" cols="40" placeholder="Enter Your Message" minlength="5" required></textarea>
+                <input type="submit" value="submit" class="btn btnSecondary mt-2" id="submitBtn">
+              </form>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" id="layer4">
+            <linearGradient id="gradient3" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" style="stop-color: #e14742; stop-opacity:1" />
+              <stop offset="100%" style="stop-color: #26b1ce; stop-opacity:1" />
+            </linearGradient>
+            <path d="M1 85, Q15 60, 30 70 Q50 85, 55 60 Q60 40 79 50 Q90 56 99 30" stroke="url(#gradient3)" stroke-width="0" fill="none" stroke-linecap="round" stroke-linecap="round" class="">
+          </svg>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="footgrid d-grid max-w p-1">
+          <div id="social" class="p-1">
+            <h3 class="h3">Social</h3>
+            <div class="socialIcon">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div id="greeting" class="p-1"></div>
+        </div>
+        <hr>
+        <p class="para t-center p-1">© Copyright 2024 . Made by <span class="underline">Gandhi Raj</span></p>
+      </footer>
+      <div id="toTopIcon" class="rounded-circle"><i class="fa fa-arrow-up"></i></div>
+    </div>
+    <!-- overlayer -->
+     <div id="overlayBanner">
+      <div class="welcomeLayer rounded-1">
+        <h2 class="welcomeMsg">WELCOME BUDDY</h2>
+      </div>
+      <div class="trees">
+        <div class="tree"></div>
+        <div class="tree"></div>
+        <div class="tree"></div>
+        <div class="tree"></div>
+        <div class="tree"></div>
+        <div class="tree"></div>
+        <div class="tree"></div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/178f5da6c6.js" crossorigin="anonymous"></script>
   </body>
 </html>
-
