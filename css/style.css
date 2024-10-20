@@ -172,8 +172,15 @@ p {
 .align-center {
   align-content: center;
 }
-body,html{
+body,
+html {
   scroll-behavior: smooth;
+}
+.btnanchor{
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 /* style starts */
 body {
@@ -917,7 +924,7 @@ svg#layer2 path.extendStroke {
 }
 /* section 2 ends */
 /* section 3 starts */
-#prjectContainer {
+#projectContainer {
   overflow: hidden;
 }
 .projectSec {
@@ -1004,50 +1011,50 @@ svg#layer4 path.curvegrow {
 }
 /* section 4 ends */
 /* footer starts */
-#footer{
+#footer {
   background-color: var(--colorp);
   padding-bottom: 3rem;
 }
-.footgrid{
+.footgrid {
   grid-template-columns: 1fr 1fr;
   grid-row: auto;
 }
-.footgrid>div{
+.footgrid > div {
   color: var(--colors);
 }
-#social{
+#social {
   text-align: center;
   align-content: center;
 }
-#social h3{
+#social h3 {
   color: var(--colors);
 }
-.socialIcon{
+.socialIcon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
-.socialIcon>a{
+.socialIcon > a {
   display: block;
   padding: 0.5rem 1rem;
   font-size: 2rem;
   color: var(--colors);
 }
-#greeting{
+#greeting {
   text-align: center;
   align-content: center;
 }
-#footer>p{
+#footer > p {
   color: var(--colors);
 }
-#footer>hr{
+#footer > hr {
   color: var(--colors);
 }
-.underline{
+.underline {
   text-decoration: underline;
 }
-#toTopIcon{
+#toTopIcon {
   position: fixed;
   bottom: 4rem;
   right: 1.5rem;
@@ -1123,7 +1130,7 @@ svg#layer4 path.curvegrow {
     width: 100%;
   }
   /* footer */
-  .footgrid{
+  .footgrid {
     grid-template-columns: 100%;
   }
 }

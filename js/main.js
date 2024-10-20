@@ -70,10 +70,33 @@ homeAnchor.addEventListener("click", function (ev) {
 
 // navbar start
 let navbar = document.getElementById("navbar");
+let navlinks = navbar.querySelectorAll(".navbarMenu a");
+navlinks.forEach((link) => {
+  link.addEventListener("click", function (ev) {
+    ev.preventDefault();
+    let sectionId = link.getAttribute("data-target");
+    let scrollElement = document.getElementById(sectionId);
+    if (scrollElement) {
+      scrollElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+let contactLinks = document.querySelectorAll(".contactAnchor");
+contactLinks.forEach((link) => {
+  link.addEventListener("click", function (ev) {
+    ev.preventDefault();
+    let sectionId = link.getAttribute("data-target");
+    let scrollElement = document.getElementById(sectionId);
+    if (scrollElement) {
+      scrollElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
 // navbar ends
 // about me svg
 let aboutcontainer = document.getElementById("aboutcontainer");
-let prjectContainer = document.getElementById("prjectContainer");
+let projectContainer = document.getElementById("projectContainer");
 let contactContainer = document.getElementById("contactContainer");
 let toTopIcon = document.getElementById("toTopIcon");
 let layer2 = document.getElementById("layer2");
@@ -85,7 +108,7 @@ window.addEventListener("scroll", function (e) {
   } else {
     layer2.children[1].classList.remove("extendStroke");
   }
-  if (window.scrollY >= prjectContainer.offsetTop - 100) {
+  if (window.scrollY >= projectContainer.offsetTop - 100) {
     layer3.children[1].classList.add("circleSvg");
   } else {
     layer3.children[1].classList.remove("circleSvg");
@@ -107,7 +130,10 @@ toTopIcon.addEventListener("click", function (ev) {
 // footer
 // greeting
 let greeting = document.getElementById("greeting");
+let thisYear = document.getElementById("thisYear");
 let daynow = new Date();
+let year = daynow.getFullYear();
+thisYear.innerHTML = `${year}`;
 let daynum = daynow.getDay();
 let dayText = daynow.toLocaleDateString("en-IN", { weekday: "long" });
 console.log(dayText);
