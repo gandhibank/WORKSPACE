@@ -37,10 +37,10 @@
       </header>
       <nav id="navbar">
         <ul class="navbarMenu">
-          <li class="navbar-item"><a href="#">Home</a></li>
-          <li class="navbar-item"><a href="#">About</a></li>
-          <li class="navbar-item"><a href="#">Projects</a></li>
-          <li class="navbar-item"><a href="#">Contact</a></li>
+          <li class="navbar-item"><a href="#" data-target="headerSection">Home</a></li>
+          <li class="navbar-item"><a href="#" data-target="aboutcontainer">About</a></li>
+          <li class="navbar-item"><a href="#" data-target="projectContainer">Projects</a></li>
+          <li class="navbar-item"><a href="#" data-target="contactContainer">Contact</a></li>
         </ul>
       </nav>
       <main>
@@ -60,10 +60,10 @@
               </p>
               <div class="btnGroups">
                 <button type="button" class="btnSecondary rounded-1 mt-1">
-                  Get Resume
+                  <a href="./assets/resume.pdf" download="resume" class="btnanchor">Get Resume</a>
                 </button>
                 <button type="button" class="btnPrimary rounded-1 ml-2 mt-1">
-                  Hire Me
+                  <a href="#" data-target="contactContainer" class="btnanchor contactAnchor">Hire Me</a>
                 </button>
               </div>
             </div>
@@ -106,7 +106,9 @@
             <div class="col-6 p-1">
               <h3 class="h3 pt-2">Get to know me!</h3>
               <p class="para pt-2">I'm a <span class="highlight">Frontend Web Developer</span> specializing in building and managing the front-end of websites and web applications, driving the overall success of products. I'm currently seeking <span class="highlight">job</span> opportunities where I can contribute, learn, and grow. Please <span class="highlight">reach out</span> if you have a suitable chance that aligns with my skills and experience! </p>
-              <button type="button" class="btn btnSecondary mt-2">Reach Out</button>
+              <button type="button" class="btn btnSecondary mt-2">
+                <a href="#" data-target="contactContainer" class="btnanchor contactAnchor">Reach Out</a>
+              </button>
             </div>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="400px" height="320px" viewBox="0 0 100 100" id="layer2">
@@ -117,7 +119,7 @@
             <path d="M0, 50 C 0 0, 30 0, 40 50 C 50 100, 20 100, 15 50 C 10 5, 55 0, 75 50 C 95 100, 60 100, 55 50 C 50 10, 90 0, 98 50" stroke="url(#gradient1)" stroke-width="2" fill="none" stroke-linecap="round" class="">
           </svg>
         </div>
-        <div class="section" id="prjectContainer">
+        <div class="section" id="projectContainer">
           <div class="topCenterSection p-1 t-center max-w">
             <h2 class="h2 pt-2">Projects</h2>
             <span class="separatorBar mt-1"></span>
@@ -176,15 +178,15 @@
           <div id="social" class="p-1">
             <h3 class="h3">Social</h3>
             <div class="socialIcon">
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/gandhibank" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/gandhi-raj-s-a88b38259/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/gandhuu1920/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
           <div id="greeting" class="p-1"></div>
         </div>
         <hr>
-        <p class="para t-center p-1">© Copyright 2024 . Made by <span class="underline">Gandhi Raj</span></p>
+        <p class="para t-center p-1">© Copyright <span id="thisYear"></span> . Made by <span class="underline">Gandhi Raj</span></p>
       </footer>
       <div id="toTopIcon" class="rounded-circle"><i class="fa fa-arrow-up"></i></div>
     </div>
