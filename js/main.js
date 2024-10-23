@@ -127,6 +127,47 @@ window.addEventListener("scroll", function (e) {
 toTopIcon.addEventListener("click", function (ev) {
   window.scrollTo(0, 0);
 });
+//contact form
+/* contact form email functional */
+
+const USER_SERVICE_ID = "service_c14ywkt";
+const USER_TEMPLATE_ID = "template_b9gc7bo";
+const contactForm = document.getElementById("contactForm");
+const userName = document.getElementById("from_name");
+const userEmailId = document.getElementById("email_id");
+const userMessage = document.getElementById("message_content");
+const sendEmailToEmp = async (from_name, email_id, message_content) => {
+  const params = {
+    from_name: from_name,
+    email_id: email_id,
+    message_content: message_content,
+    reply_to: email_id,
+  };
+  return await emailjs.send(USER_SERVICE_ID, USER_TEMPLATE_ID, params);
+};
+contactForm.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const from_name = userName.value;
+  const email_id = userEmailId.value;
+  const message_content = userMessage.value;
+  console.log(from_name, email_id, message_content);
+  try {
+    await sendEmailToEmp(from_name, email_id, message_content);
+    console.log("email sent successfully");
+    alert("email sent successfully");
+  } catch (error) {
+    console.error(error);
+    alert("something went wrong");
+  } finally {
+    console.log("function envokoed and ended");
+    this.reset();
+  }
+});
+(function () {
+  emailjs.init({
+    publicKey: "Tifg8k_p32ZhoZlDj",
+  });
+})();
 // footer
 // greeting
 let greeting = document.getElementById("greeting");
@@ -136,7 +177,6 @@ let year = daynow.getFullYear();
 thisYear.innerHTML = `${year}`;
 let daynum = daynow.getDay();
 let dayText = daynow.toLocaleDateString("en-IN", { weekday: "long" });
-console.log(dayText);
 let yearText = daynow.getYear();
 let message;
 if (daynum === 0 || daynum === 6) {
