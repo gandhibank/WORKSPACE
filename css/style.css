@@ -176,6 +176,12 @@ body,
 html {
   scroll-behavior: smooth;
 }
+.btnanchor{
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 /* style starts */
 body {
   margin: 0;
@@ -918,7 +924,7 @@ svg#layer2 path.extendStroke {
 }
 /* section 2 ends */
 /* section 3 starts */
-#prjectContainer {
+#projectContainer {
   overflow: hidden;
 }
 .projectSec {
