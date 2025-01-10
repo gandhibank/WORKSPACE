@@ -924,6 +924,12 @@ svg#layer2 path.extendStroke {
 .projectSec {
   height: auto;
   align-content: flex-start;
+  background-color: hsl(from var(--colors) h s l / 0.5);
+}
+.img-fluid {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
 }
 svg#layer3 {
   top: 0;
